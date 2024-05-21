@@ -13,7 +13,7 @@ This project is an ecommerce application built using Node.js, Express, TypeORM, 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/ecommerce-task.git
+   git clone https://github.com/nikolavelkovski/e-commerce-task.git
    cd ecommerce-task
    ```
 
@@ -25,7 +25,7 @@ This project is an ecommerce application built using Node.js, Express, TypeORM, 
 
 3. Create environment-specific configuration files:
 
-   Create a `.env` file in the root directory or and copy the information from `.env.example`;
+   Create a `.env` file in the root directory or and copy the information from `.env.example` and put the information of your local posgresql database created;
 
    **.env**
 
@@ -79,9 +79,9 @@ This project is an ecommerce application built using Node.js, Express, TypeORM, 
    To create variant, send a `POST` request to `/api/variants` with the provided JSON body :
   ```json
   {
-    "name": "pizza3",
-    "description": "good pizza",
-    "price": 22.3,
-    "inventory": 2
+    "description": "ds",
+    "name": "XL",
+    "price": 2.33,
+    "productId": "7c88acd6-53a2-45be-8b5f-9ce0a84ad748" //need to put the product_id to which productid
   }
   ```
